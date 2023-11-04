@@ -171,43 +171,28 @@ $thirdFont : 1.7rem;
     }
 }
 .Forget{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     padding-top: 220px;
     padding-bottom: 400px;
     h1{
         font-size: $secondFont;
         font-weight: 600;
         font-family: 'Signika Negative', sans-serif;
-        border-bottom: 3px solid $primeColor;
         border-radius: 2px;
         color: $fifthColor;
         text-shadow: #000000 1px 2px 3px ;
     }
     .Forget_btn{
         padding-top: 40px ;
-        display: -webkit-box;
-        display: -ms-flexbox;
+        width: 30%;
         display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        justify-content: center;
+        flex-direction: column;
         input{
             height: 50px;
             border: none;
-            border-radius: 5px;
+            border-radius: 15px;
             width: 90%;
+            border: $primeColor 2px solid;
         }
         button{
         width: 50%;

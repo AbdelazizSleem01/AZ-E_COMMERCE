@@ -19,14 +19,12 @@ const ForgetPass = () => {
         })
     }
     return (
-        <div className='Forget'>
-            <div className="App">
-            <h1 className='text-center'> Forgot Password</h1>
-            <form className='Forget_btn ' onSubmit={(e)=>handleSubmit(e)}>
-                <input className='mx-auto'  name="email" />
-                <button className='mx-auto'>Reset</button>
-            </form>
-        </div>
+        <div className='Forget '>
+                <h1 className='text-center'> Forgot Password</h1>
+                <form className='Forget_btn  mx-auto' onSubmit={(e)=>handleSubmit(e)}>
+                    <input className='mx-auto'  name="email" />
+                    <button className='mx-auto'>Reset</button>
+                </form>
         </div>
     )
 }

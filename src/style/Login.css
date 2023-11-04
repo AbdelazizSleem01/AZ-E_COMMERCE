@@ -135,9 +135,6 @@
 }
 
 .Forget {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-top: 220px;
   padding-bottom: 400px;
 }
@@ -145,13 +142,13 @@
   font-size: 2.8rem;
   font-weight: 600;
   font-family: "Signika Negative", sans-serif;
-  border-bottom: 3px solid rgba(4, 109, 56, 0.9294117647);
   border-radius: 2px;
   color: #ffbb00;
   text-shadow: #000000 1px 2px 3px;
 }
 .Forget .Forget_btn {
   padding-top: 40px;
+  width: 30%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -159,8 +156,9 @@
 .Forget .Forget_btn input {
   height: 50px;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   width: 90%;
+  border: rgba(4, 109, 56, 0.9294117647) 2px solid;
 }
 .Forget .Forget_btn button {
   width: 50%;

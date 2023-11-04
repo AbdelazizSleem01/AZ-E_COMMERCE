@@ -41,7 +41,6 @@ const Login = () => {
         })
         .catch((err)=>{
             console.log(err)
-            Navigation('/')
         })
     };
     
@@ -74,7 +73,6 @@ const Login = () => {
         else{
             signInWithEmailAndPassword(auth,email,password).then((data)=>{
                 console.log(data,'hi user ')
-                history("/");
             })
             .catch((err) => {
                 alert(err.code);
