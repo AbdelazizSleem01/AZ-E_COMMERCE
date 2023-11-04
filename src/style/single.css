@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.SingleCard {
+  width: 100%;
+}
+
+.lead .des_price {
+  color: #ff0000;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.btn_cart {
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  color: #ffffff;
+  font-weight: 700;
+  padding: 9px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn_cart:hover {
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  color: #000000;
+}
+
+.btn_fav {
+  background-color: #ffbb00;
+  color: #000000;
+  font-weight: 700;
+  padding: 9px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn_fav:hover {
+  background-color: #ffbb00;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.details {
+  margin-bottom: 30px;
+}
+.details li {
+  color: rgb(58, 58, 58);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.Des_title {
+  font-size: 1.3rem;
+  color: #ffbb00;
+  text-shadow: 1px 2px 2px #000000;
+}
+
+.rating {
+  display: flex;
+  margin-bottom: 10px;
+}
+.rating p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+}
+.rating .stars {
+  font-size: 2.1rem;
+  padding-top: 3px;
+}/*# sourceMappingURL=single.css.map */

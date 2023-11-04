@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Compare_title {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  padding-bottom: 50px;
+}
+.Compare_title h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  font-family: "Signika Negative", sans-serif;
+  border-bottom: 2px solid rgba(4, 109, 56, 0.9294117647);
+  color: #ffbb00;
+  text-shadow: #000000 1px 2px 3px;
+}
+
+.Compare {
+  position: relative;
+  width: 90%;
+  border-radius: 500px;
+}
+.Compare Table {
+  border: #ffbb00 1px solid;
+  border-radius: 20px;
+  padding: 20px;
+}
+.Compare Table .pro_title {
+  border: #ffbb00 1px solid;
+  padding-top: 170px;
+}
+.Compare Table .pro_title p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.Compare Table tr .stars {
+  padding-top: 5px;
+}
+.Compare Table tr .Value {
+  padding-top: 20px;
+}
+.Compare Table .Head_side {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #ffbb00 1px solid;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.Compare Table .Rating_Com {
+  border: #ffbb00 1px solid;
+  width: 100%;
+  margin: auto;
+}
+.Compare Table .Remove {
+  position: relative;
+  left: 400px;
+  padding: 5px 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+.Compare Table .product-details {
+  padding: 10px;
+}
+.Compare Table .product-details p {
+  background-color: none;
+  width: 50%;
+}
+.Compare Table .product-details img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 250px;
+  height: auto;
+  border-radius: 50px;
+}
+.Compare Table .ADD_BUTTON {
+  padding: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+}
+.Compare .clear_btn {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  border: 3px dotted #ffbb00;
+  color: #ffffff;
+  padding: 10px;
+  width: 30%;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.Empty_compare {
+  display: block;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.Empty_compare h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-family: "Signika Negative", sans-serif;
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  color: #ffbb00;
+  padding: 10px;
+  border-radius: 10px;
+  width: 35%;
+}
+.Empty_compare .HashLink {
+  text-decoration: none;
+}
+.Empty_compare .HashLink Button {
+  background-color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.Empty_compare .HashLink strong {
+  color: #000000;
+  font-family: "Signika Negative", sans-serif;
+  font-size: 1.8rem;
+}
+.Empty_compare .HashLink span {
+  text-align: center;
+  color: #000000;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .Empty_compare {
+    display: block;
+    justify-content: center;
+    padding-top: 300px;
+    padding-bottom: 100px;
+  }
+  .Empty_compare h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-family: "Signika Negative", sans-serif;
+    background-color: rgba(4, 109, 56, 0.9294117647);
+    color: #ffbb00;
+    padding: 10px;
+    border-radius: 10px;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Empty_compare {
+    display: block;
+    justify-content: center;
+    padding-top: 300px;
+    padding-bottom: 100px;
+  }
+  .Empty_compare h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: "Signika Negative", sans-serif;
+    background-color: rgba(4, 109, 56, 0.9294117647);
+    color: #ffbb00;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+  }
+  .Compare_title h3 {
+    font-size: 11vw;
+  }
+}/*# sourceMappingURL=Compare.css.map */

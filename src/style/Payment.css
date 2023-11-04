@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Payment {
+  padding-top: 150px;
+  width: 90vw;
+  height: auto;
+  margin-bottom: 1100px;
+  display: flex;
+  justify-content: center;
+}
+.Payment .wrapper {
+  background-color: lightgray;
+  padding: 100px;
+  border-radius: 10px;
+}
+.Payment .wrapper input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  border-radius: 15px;
+  border: none;
+  color: #ffffff;
+  border: 2px solid #ffbb00;
+  width: auto;
+}/*# sourceMappingURL=Payment.css.map */

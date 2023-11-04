@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Contact {
+  padding: 15px;
+  width: 80%;
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  position: relative;
+  top: 170px;
+  margin-bottom: 200px;
+  border-radius: 40px;
+  border: 2px solid #ffbb00;
+}
+.Contact .Row {
+  border: 2px solid #ffffff;
+  border-radius: 35px;
+  padding: 25px;
+}
+.Contact .Form_label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffbb00;
+  text-shadow: #000000 1px 2px 3px;
+}
+.Contact .Valid_err {
+  color: rgb(173, 2, 2);
+  font-weight: 700;
+  text-shadow: #000000 1px 2px 4px;
+  font-size: 1rem;
+}
+.Contact .Valid_err > label {
+  font-weight: 500;
+  color: #ffbb00;
+  text-shadow: #000000 1px 2px 3px;
+}
+.Contact .Valid_true {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  text-shadow: white 1px 2px 4px;
+  font-size: 1rem;
+}
+.Contact .Btn_Submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 50px;
+  color: #000000;
+  background-color: #ffbb00;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.Contact .Btn_Submit:active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50px;
+  color: #000000;
+  background-color: rgb(255, 123, 0);
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.Maps {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 778px) {
+  .Maps {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (max-width: 678px) {
+  .Btn_Submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    color: #000000;
+    background-color: #ffbb00;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}/*# sourceMappingURL=Contact.css.map */

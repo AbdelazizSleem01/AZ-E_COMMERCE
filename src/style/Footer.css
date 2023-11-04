@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Footer {
+  margin-top: 70px;
+  background-color: rgba(4, 109, 56, 0.9294117647);
+}
+.Footer .bg_icon {
+  background-color: #ffbb00;
+  padding: 5px;
+  border-radius: 50%;
+  color: #ffffff;
+}
+.Footer h6 {
+  text-shadow: 1px 2px 3px #000000;
+}
+.Footer p {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+.Footer .summary {
+  color: 2.8rem;
+  font-weight: 800;
+  font-family: "Signika Negative", sans-serif;
+  color: #252525;
+}/*# sourceMappingURL=Footer.css.map */

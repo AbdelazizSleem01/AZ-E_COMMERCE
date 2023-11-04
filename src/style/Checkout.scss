@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//colors
+
+$primeColor:#046D38ED;
+$secondColor : #252525;
+$thirdColor :#000000 ;
+$fourthColor:#ffffff;
+$fifthColor:#ffbb00;
+
+//Fonts
+
+
+$primeFont : 1.2rem;
+$secondFont : 2.8rem;
+$thirdFont : 1.7rem;
+
+.title_Check{
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: $secondFont;
+    font-weight: 600;
+    font-family: 'Signika Negative', sans-serif;
+    color: $fifthColor;
+    text-shadow: #000000 1px 2px 3px ;
+}
+.TOTAL{
+    color: white;
+}
+// Cart
+
+.Check_Cart{
+    background-color: $primeColor;
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    margin-right:80px;
+    .CART{
+        width: 100%;
+        height: auto;
+    }
+    .Check_Product{
+        .NO_ITEM{
+            display: flex;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-shadow: #000000 1px 2px 3px ;
+        }
+        .Img_title{
+            display: flex;
+            align-items: center;
+            img{
+                width: 50px;
+                height: auto;
+            }
+            p{
+                padding:10px 5px 0 10px;
+                font-size:13px;
+                font-weight: 600;
+            }
+        }
+        hr{
+            width: auto;
+            padding-bottom: 3px;
+        }
+        .Amount{
+            float: right;
+            padding: 2px;
+            border-radius: 50%;
+            border: none;
+            width: 25px;
+            font-weight: 600;
+        }
+    }
+    h6{
+        display: flex;
+        align-items: center;
+        float: left;
+        color: $thirdColor;
+        cursor: pointer;
+        background-color: $fifthColor;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        margin: 5px;
+    }
+    .Subtotal{
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+        font-size: $primeFont;
+        background-color: #00000027;
+        padding: 10px;
+        border-radius: 15px;
+        width: auto;
+        text-shadow: 1px 2px 2px $thirdColor;
+    }
+    .price_check{
+        display: flex;
+        justify-content: center;
+        background-color: $fifthColor;
+        width: 40%;
+        border-radius: 5px;
+        text-shadow: 1px 2px 2px $thirdColor;
+    }
+}
+.Form{
+    border-radius: 10px;
+    background-color: $primeColor;
+    height:100vh;
+    border: #ffbb00 2px solid;
+    h4{
+        font-size: 1.9rem;
+        padding: 30px 0px  10px 30px;
+        text-shadow: #000000 1px 1px 2px ;
+        letter-spacing: 3px;
+    }
+    form{
+        padding: 10px 30px  0px 30px;
+        .border_Check{
+            border: 2px solid $thirdColor;
+            border-radius: 10px;
+        }
+        .input-group-text{
+            border-radius: 5px;
+        }
+        .Hash{
+            text-decoration: none;
+        }
+    .Check-btn{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        background-color: $fifthColor;
+        padding: 10px;
+        margin-top: 20px;
+        border: none;
+        width: 35%;
+        font-weight: 700;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        &:hover{
+            color:$primeColor;
+            text-shadow: 1px 2px 1px $thirdColor;
+        }
+    }
+}
+}
+.error-message{
+    
+}

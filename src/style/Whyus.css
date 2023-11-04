@@ -1,0 +1,41 @@
+.why_us {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px !important;
+}
+
+.icons_why {
+  border: 2px solid #ffbb00;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.031372549);
+}
+.icons_why span {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: rgba(4, 109, 56, 0.9294117647);
+  font-size: 2.8rem;
+  margin-bottom: 17px;
+  cursor: context-menu;
+}
+.icons_why span:hover {
+  transform: scale(1.1) !important;
+  transition: 0.5s all ease;
+}
+.icons_why h3 {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center !important;
+}
+.icons_why p {
+  display: flex;
+  justify-content: center !important;
+}
+
+@media screen and (max-width: 992px) {
+  .why_us {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px !important;
+  }
+}/*# sourceMappingURL=Whyus.css.map */

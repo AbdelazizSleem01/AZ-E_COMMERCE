@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.head-Log {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 110px;
+}
+
+.activeColor {
+  border: 2px solid #ffbb00;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background: rgba(4, 109, 56, 0.9294117647);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.pointer {
+  border: 2px solid rgba(4, 109, 56, 0.9294117647);
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 700;
+}
+
+.title_log {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+}
+.title_log h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-family: "Signika Negative", sans-serif;
+  border-bottom: 3px solid rgba(4, 109, 56, 0.9294117647);
+  border-radius: 2px;
+  color: #ffbb00;
+  text-shadow: #000000 1px 2px 3px;
+}
+
+.Login {
+  padding: 50px;
+  width: 40%;
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  position: relative;
+  top: 50px;
+  margin-bottom: 500px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.Login .Form_label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffbb00;
+  text-shadow: #000000 1px 2px 3px;
+}
+.Login .Valid_err {
+  color: rgb(173, 2, 2);
+  font-weight: 700;
+  text-shadow: #000000 1px 2px 4px;
+  font-size: 1rem;
+}
+.Login .Valid_err > label {
+  font-weight: 500;
+  color: #ffbb00;
+  text-shadow: #000000 1px 2px 3px;
+}
+.Login .Valid_true {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  text-shadow: white 1px 2px 4px;
+  font-size: 1rem;
+}
+.Login .Btn_Submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50px;
+  color: #000000;
+  background-color: #ffbb00;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.Login .Btn_Submit:active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50px;
+  color: #000000;
+  background-color: rgb(255, 123, 0);
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.Login .show_hide {
+  border: none;
+  padding: 10px;
+}
+
+.face {
+  margin-top: 200px;
+}
+
+.title_or {
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding-top: 30px;
+}
+
+.Login_with {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.Login_with img {
+  width: 50px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.Forget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 220px;
+  padding-bottom: 400px;
+}
+.Forget h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  font-family: "Signika Negative", sans-serif;
+  border-bottom: 3px solid rgba(4, 109, 56, 0.9294117647);
+  border-radius: 2px;
+  color: #ffbb00;
+  text-shadow: #000000 1px 2px 3px;
+}
+.Forget .Forget_btn {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Forget .Forget_btn input {
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+}
+.Forget .Forget_btn button {
+  width: 50%;
+  height: 50px;
+  color: #000000;
+  background-color: #ffbb00;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.forgetpass {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1108px) {
+  .Login {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .Login {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Login {
+    width: 80%;
+    padding: 35px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .Login {
+    padding: 30px;
+    width: 95%;
+  }
+  .Login .Btn_Submit {
+    width: 40%;
+    height: 50px;
+  }
+}/*# sourceMappingURL=Login.css.map */

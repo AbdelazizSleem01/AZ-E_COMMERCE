@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//colors
+
+$primeColor:#046D38ED;
+$secondColor : #252525;
+$thirdColor :#000000 ;
+$fourthColor:#ffffff;
+$fifthColor:#ffbb00;
+
+//Fonts
+
+
+$primeFont : 1.2rem;
+$secondFont : 2.8rem;
+$thirdFont : 1.7rem;
+
+.Footer{
+    margin-top: 70px;
+    background-color: $primeColor;
+    .bg_icon{
+        background-color: $fifthColor;
+        padding: 5px;
+        border-radius: 50%;
+        color: $fourthColor;
+    }
+    h6{
+        text-shadow: 1px 2px 3px $thirdColor;
+    }
+    p{text-decoration: none;
+        font-size: 1rem;
+        color: #ffffff;
+        font-weight: 500;
+    }
+    .summary{
+        color: $secondFont;
+        font-weight: 800;
+        font-family: 'Signika Negative', sans-serif;
+        color: $secondColor;
+    }
+}

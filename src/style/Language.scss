@@ -1,0 +1,36 @@
+//colors
+
+$primeColor:#046D38ED;
+$secondColor : #252525;
+$thirdColor :#000000 ;
+$fourthColor:#ffffff;
+$fifthColor:#ffbb00;
+
+//Fonts
+
+$primeFont : 1.2rem;
+
+
+.Language{
+    background-color: rgba(240, 255, 255, 0) !important;
+    color: rgb(80, 70, 63) !important;
+    border: none !important; 
+    align-items: center !important;
+    margin-left: -30px;
+    
+}
+
+.Language:after {
+    content: "" !important;
+    display: none !important;
+} 
+
+.menu{
+    position: absolute !important;
+    left: -85px !important;
+    .as:active{
+        background-color: $fifthColor !important;
+        font-weight: 600;
+    }
+}
+

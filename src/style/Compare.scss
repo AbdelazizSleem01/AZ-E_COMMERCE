@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//colors
+
+$primeColor:#046D38ED;
+$secondColor : #252525;
+$thirdColor :#000000 ;
+$fourthColor:#ffffff;
+$fifthColor:#ffbb00;
+
+//Fonts
+
+$primeFont : 1.2rem;
+$secondFont : 2.8rem;
+$thirdFont : 1.7rem;
+
+$border:$fifthColor 1px solid;
+
+
+.Compare_title{
+    display: flex;
+    justify-content: center; 
+    margin-top: 120px;
+    padding-bottom: 50px;
+    h3{
+        font-size: $secondFont;
+        font-weight: 600;
+        font-family: 'Signika Negative', sans-serif;
+        border-bottom: 2px solid $primeColor;
+        color: $fifthColor;
+        text-shadow: #000000 1px 2px 3px ;
+    }
+}
+.Compare{
+        position: relative;
+        width: 90%;
+        border-radius: 500px;
+        Table{
+            border:$border;
+            border-radius: 20px;
+            padding: 20px;
+            .pro_title{
+                border:$border;
+                padding-top: 170px;
+                p{
+                    font-size: $primeFont;
+                    font-weight: 600;
+                }
+            }
+            tr{
+                .stars{
+                    padding-top: 5px;
+                }
+                .Value{
+                    padding-top: 20px;
+                }
+            }
+            .Head_side{
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border:$border;
+                font-size: $primeFont;
+                font-weight: 600;
+            }
+            .Rating_Com{
+                border:$border;
+                width: 100%;
+                margin: auto;
+            }
+            .Remove{
+                position: relative;
+                left: 400px;
+                padding: 5px 10px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                border:none;
+                outline: none;
+                color: white;
+                background-color: $primeColor;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 20px 0;
+                
+            }
+            .product-details{
+                padding: 10px;
+                p{
+                    background-color:none;
+                    width: 50%;
+                }
+                img{
+                    object-fit: contain;
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px;
+                    margin-bottom: 5px;
+                    width: 250px;
+                    height: auto;
+                    border-radius: 50px;
+                }
+            }
+        .ADD_BUTTON{
+            padding: 10px ;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border:none;
+            outline: none;
+            color: white;
+            background-color: $primeColor;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            margin-top: 7px;
+        }
+        
+    }
+    .clear_btn{
+        display: flex;
+        justify-content: center;
+        background-color: $primeColor;
+        border: 3px dotted $fifthColor;
+        color: $fourthColor;
+        padding: 10px;
+        width: 30%;
+        border-radius: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: $primeFont;
+        font-weight: 600;
+    }
+}
+.Empty_compare{
+        display: block;
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        h3{
+            display: flex;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-family: 'Signika Negative', sans-serif;
+            background-color:$primeColor ;
+            color: $fifthColor;
+            padding: 10px;
+            border-radius: 10px;
+            width: 35%;
+        }
+        .HashLink{   
+            text-decoration: none;
+            Button{
+                background-color: $fourthColor;
+                border: none;
+                display: flex;
+                align-items: center;
+            }
+            strong{
+                color: $thirdColor;
+                font-family: 'Signika Negative', sans-serif;
+                font-size: 1.8rem;
+            }
+            span{
+                text-align: center;
+                color: $thirdColor;
+                font-size: 2rem;
+            }
+        }
+    
+}
+
+
+@media screen and (max-width:900px) {
+        .Empty_compare{
+            display: block;
+            justify-content: center;
+            padding-top: 300px;
+            padding-bottom: 100px;
+            h3{
+                display: flex;
+                justify-content: center;
+                font-size: 1.7rem;
+                font-family: 'Signika Negative', sans-serif;
+                background-color:$primeColor ;
+                color: $fifthColor;
+                padding: 10px;
+                border-radius: 10px;
+                width: 45%;
+            }
+    }
+}
+@media screen and (max-width:550px) {
+        .Empty_compare{
+            display: block;
+            justify-content: center;
+            padding-top: 300px;
+            padding-bottom: 100px;
+            h3{
+                display: flex;
+                justify-content: center;
+                font-size: 1.5rem;
+                font-family: 'Signika Negative', sans-serif;
+                background-color:$primeColor ;
+                color: $fifthColor;
+                padding: 10px;
+                border-radius: 10px;
+                width: 50%;
+            }
+    }
+    .Compare_title{
+        h3{
+            font-size: 11vw;
+        }
+    }
+    }
+

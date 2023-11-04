@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Autocomplete {
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+.MuiFormLabel-root {
+  font-size: 0.9rem !important;
+  color: #000000 !important;
+}
+
+.MuiFormLabel-root::before {
+  font-size: 0.9rem !important;
+  color: #000000 !important;
+}
+
+.card {
+  display: flex;
+  width: 21vw;
+  text-align: center;
+  text-decoration: none;
+}
+.card .link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.card .img {
+  width: 7vw !important;
+  height: auto !important;
+  border-radius: 50%;
+  border: 2px solid #ffbb00;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media screen and (max-width: 1100px) {
+  .card {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+  }
+  .card .link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .card .img {
+    width: 30% !important;
+    height: auto !important;
+    border-radius: 50%;
+    border: 2px solid #ffbb00;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}/*# sourceMappingURL=AutoSearch .css.map */

@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title_Check {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 2.8rem;
+  font-weight: 600;
+  font-family: "Signika Negative", sans-serif;
+  color: #ffbb00;
+  text-shadow: #000000 1px 2px 3px;
+}
+
+.TOTAL {
+  color: white;
+}
+
+.Check_Cart {
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  margin-right: 80px;
+}
+.Check_Cart .CART {
+  width: 100%;
+  height: auto;
+}
+.Check_Cart .Check_Product .NO_ITEM {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-shadow: #000000 1px 2px 3px;
+}
+.Check_Cart .Check_Product .Img_title {
+  display: flex;
+  align-items: center;
+}
+.Check_Cart .Check_Product .Img_title img {
+  width: 50px;
+  height: auto;
+}
+.Check_Cart .Check_Product .Img_title p {
+  padding: 10px 5px 0 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.Check_Cart .Check_Product hr {
+  width: auto;
+  padding-bottom: 3px;
+}
+.Check_Cart .Check_Product .Amount {
+  float: right;
+  padding: 2px;
+  border-radius: 50%;
+  border: none;
+  width: 25px;
+  font-weight: 600;
+}
+.Check_Cart h6 {
+  display: flex;
+  align-items: center;
+  float: left;
+  color: #000000;
+  cursor: pointer;
+  background-color: #ffbb00;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.Check_Cart .Subtotal {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.1529411765);
+  padding: 10px;
+  border-radius: 15px;
+  width: auto;
+  text-shadow: 1px 2px 2px #000000;
+}
+.Check_Cart .price_check {
+  display: flex;
+  justify-content: center;
+  background-color: #ffbb00;
+  width: 40%;
+  border-radius: 5px;
+  text-shadow: 1px 2px 2px #000000;
+}
+
+.Form {
+  border-radius: 10px;
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  height: 100vh;
+  border: #ffbb00 2px solid;
+}
+.Form h4 {
+  font-size: 1.9rem;
+  padding: 30px 0px 10px 30px;
+  text-shadow: #000000 1px 1px 2px;
+  letter-spacing: 3px;
+}
+.Form form {
+  padding: 10px 30px 0px 30px;
+}
+.Form form .border_Check {
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+.Form form .input-group-text {
+  border-radius: 5px;
+}
+.Form form .Hash {
+  text-decoration: none;
+}
+.Form form .Check-btn {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #ffbb00;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  width: 35%;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.Form form .Check-btn:hover {
+  color: rgba(4, 109, 56, 0.9294117647);
+  text-shadow: 1px 2px 1px #000000;
+}/*# sourceMappingURL=Checkout.css.map */

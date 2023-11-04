@@ -1,0 +1,56 @@
+//colors
+
+$primeColor:#046D38ED;
+$secondColor : #252525;
+$thirdColor :#000000 ;
+$fourthColor:#ffffff;
+$fifthColor:#ffbb00;
+
+//Fonts
+
+$primeFont : 1.2rem;
+$secondFont : 2.8rem;
+
+.why_us{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px !important;
+
+}
+
+.icons_why{
+    border: 2px solid $fifthColor;
+    margin: 10px;
+    background-color: #00000008;
+    span{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        color:$primeColor;
+        font-size: $secondFont;
+        margin-bottom: 17px;
+        cursor: context-menu;
+    }
+    span:hover{
+        transform: scale(1.1) !important;
+        transition: .5s all ease;
+    }
+    h3{
+        font-size: $primeFont;
+        display: flex;
+        justify-content: center !important;
+    }
+    p{
+        display: flex;
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .why_us{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px !important;
+    }
+    
+}

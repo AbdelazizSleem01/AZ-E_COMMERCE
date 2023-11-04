@@ -1,0 +1,21 @@
+.Language {
+  background-color: rgba(240, 255, 255, 0) !important;
+  color: rgb(80, 70, 63) !important;
+  border: none !important;
+  align-items: center !important;
+  margin-left: -30px;
+}
+
+.Language:after {
+  content: "" !important;
+  display: none !important;
+}
+
+.menu {
+  position: absolute !important;
+  left: -85px !important;
+}
+.menu .as:active {
+  background-color: #ffbb00 !important;
+  font-weight: 600;
+}/*# sourceMappingURL=Language.css.map */

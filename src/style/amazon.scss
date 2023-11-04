@@ -1,0 +1,194 @@
+$primeColor:#046D38ED;
+$secondColor : #252525;
+$thirdColor :#000000 ;
+$fourthColor:#ffffff;
+$fifthColor:#ffbb00;
+$sixColor:#046d38;
+
+
+
+.Notification{
+    height: 10%;
+    width: auto;
+    position: fixed; 
+    z-index: 3000;
+    left: 3%;
+    top:86%;
+    background-color:$sixColor;
+    box-shadow: #000 1px 2px 3px 1px ; 
+    overflow-x: hidden;
+    padding: 5px;
+    border-radius: 5px;
+    h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: $fourthColor;
+        font-family: cursive;
+        padding-top: 5px;
+        span{
+            font-weight: 500;
+            font-size: 2rem;
+            padding: 5px;
+        }
+    }
+}
+.Notification_remove{
+    height: 10%;
+    width: auto;
+    position: fixed; 
+    z-index: 3000;
+    left: 3%;
+    top:86%;
+    background-color:rgb(175, 1, 1);
+    box-shadow: #000 1px 2px 3px 1px ; 
+    overflow-x: hidden;
+    padding: 5px;
+    border-radius: 5px;
+    h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: $fourthColor;
+        font-family: cursive;
+        padding-top: 5px;
+        span{
+            font-weight: 500;
+            font-size: 2rem;
+            padding: 5px;
+        }
+    }
+}
+
+
+.amazon{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 5vw;
+}
+
+@media screen and (max-width:1200px) {
+    .amazon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 0;
+    }
+    .Notification_remove{
+        height: 10%;
+        width: auto;
+        position: fixed; 
+        z-index: 1000;
+        left: 3%;
+        top:86%;
+        background-color:rgb(175, 1, 1);
+        box-shadow: #000 1px 2px 3px 1px ; 
+        overflow-x: hidden;
+        padding: 5px;
+        border-radius: 5px;
+        h3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: $fourthColor;
+            font-family: cursive;
+            padding-top: 5px;
+            span{
+                font-weight: 500;
+                font-size: 2rem;
+                padding: 5px;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:1050px) {
+    .amazon{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10vw;
+    }
+}
+@media screen and (max-width:900px) {
+    .amazon{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:799px) {
+    .amazon{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:674px) {
+    .amazon{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+            margin-left: 20vw;
+    }
+}
+@media screen and (max-width:467px) {
+    .amazon{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 8vw;
+    }
+    .Notification_remove{
+        height: 10%;
+        width: auto;
+        position: fixed; 
+        z-index: 1000;
+        left: 3%;
+        top:86%;
+        background-color:rgb(175, 1, 1);
+        box-shadow: #000 1px 2px 3px 1px ; 
+        overflow-x: hidden;
+        padding: 5px;
+        border-radius: 5px;
+        h3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1em;
+            color: $fourthColor;
+            font-family: cursive;
+            padding-top: 5px;
+            span{
+                font-weight: 500;
+                font-size: 1.4rem;
+                padding: 5px;
+            }
+        }
+    }
+    .Notification{
+        height: 9%;
+        width: auto;
+        position: fixed; 
+        z-index: 1000;
+        left: 3%;
+        top:86%;
+        background-color:$sixColor;
+        box-shadow: #000 1px 2px 3px 1px ; 
+        overflow-x: hidden;
+        padding: 5px;
+        border-radius: 5px;
+        h3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: $fourthColor;
+            font-family: cursive;
+            padding-top: 5px;
+            span{
+                font-weight: 500;
+                font-size: 1.5rem;
+                padding: 5px;
+            }
+        }
+    }
+}

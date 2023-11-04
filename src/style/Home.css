@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .Navbar { */
+.NAV {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.bg_nav {
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  position: relative;
+}
+
+.Logo {
+  font-weight: 700;
+  margin: 8px;
+}
+.Logo img {
+  margin: -8px;
+}
+
+.shop_cart {
+  display: flex;
+}
+.shop_cart h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  background-color: #ffbb00;
+  border-radius: 50%;
+  color: #000000;
+  margin-left: -25px;
+  margin-top: 0px;
+  font-size: 15px;
+}
+
+.Pages_par .Pages {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: rgba(4, 109, 56, 0.9294117647);
+  font-size: 1.2rem;
+  font-weight: 800;
+  background-color: #ffbb00;
+  padding: 5px 10px;
+  border-radius: 15px;
+  text-shadow: #ffffff 1px 2px 3px;
+}
+.Pages_par .Pages:active {
+  color: #ffffff;
+  text-shadow: #000000 1px 2px 3px;
+}
+
+.TOTOP {
+  text-decoration: none;
+}
+.TOTOP:hover {
+  opacity: 0.8;
+}
+
+.scroll-to-top {
+  position: fixed;
+  z-index: 2000;
+  left: 3%;
+  top: 90%;
+  background-color: #ffbb00;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.scroll-to-top.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.title {
+  color: #000000;
+  font-size: 1.2rem;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+.title {
+  display: inline-block;
+}
+
+.title:after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #ffbb00;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  margin-top: 5px;
+}
+
+.title:after {
+  transform-origin: 100% 50%;
+}
+
+.title:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
+}
+
+.search_box {
+  margin: auto;
+  margin-left: -20rem;
+  padding-left: 20px;
+  width: 32vw;
+}
+
+.search_box input[type=search]:focus {
+  border-color: #ffbb00 !important;
+  outline-color: none !important;
+}
+
+.search_button {
+  color: #000000 !important;
+  font-weight: 600 !important;
+  background-color: #ffbb00 !important;
+  border-color: #ffbb00 !important;
+}
+
+.search_button:hover {
+  opacity: 0.9;
+}
+
+.Nav_icons {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+}
+.Nav_icons span {
+  display: flex;
+  padding: 10px;
+  font-size: 30px;
+  color: #000000;
+  cursor: pointer;
+}
+.Nav_icons span:hover {
+  color: #ffbb00;
+}
+
+.UserPhoto {
+  padding: 0 10px;
+  cursor: pointer;
+}
+.UserPhoto h6 {
+  background-color: #000000;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  width: 35px;
+  height: 35px;
+  font-size: 13px;
+}
+
+.drop {
+  margin-left: 10px;
+}
+.drop .menu .as {
+  text-decoration: none;
+  height: 40px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #000000;
+}
+.drop .menu .as span {
+  font-size: 1.5rem;
+}
+.drop .menu .as:active {
+  background-color: none;
+}
+.drop .menu .as span:hover {
+  color: #000000;
+}
+
+.dark {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.dark .title-card {
+  color: #ffffff;
+}
+.dark .top_card {
+  border: 1px solid #ffffff;
+}
+.dark .cards {
+  box-shadow: 1px 1px 5px 3px #ffffff;
+}
+.dark .details {
+  margin-bottom: 30px;
+}
+.dark .details li {
+  color: #ffffff;
+}
+.dark .top_title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #c5c5c5;
+  border-radius: 2px;
+}
+.dark .top_title p {
+  padding: 15px;
+  color: #000;
+}
+.dark .Name h6, .dark .Name h4 {
+  color: #000000;
+}
+.dark .Close-btn {
+  color: #000000;
+}
+
+.Darkmode {
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+}
+.Darkmode span {
+  display: flex;
+  justify-content: center;
+}
+
+.Gmail {
+  display: flex;
+  align-items: center;
+}
+.Gmail .Avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.Small_gmail {
+  margin: 0;
+  width: 350px;
+  height: auto;
+  position: absolute;
+  top: 65px;
+  right: 35%;
+  background-color: #e1e1e1;
+  z-index: 1000;
+  overflow: auto;
+  scroll-behavior: smooth;
+  border-radius: 30px;
+}
+.Small_gmail .Btn_Submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50px;
+  color: #000000;
+  background-color: #ffbb00;
+  margin: 30px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 15px;
+}
+.Small_gmail .Btn_Submit:active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 50px;
+  color: #000000;
+  background-color: rgb(255, 123, 0);
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.Small_gmail .Close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.4rem;
+  color: #000000;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding-top: 3px;
+}
+.Small_gmail .Close-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1725490196);
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+}
+.Small_gmail .Close-btn:active {
+  background-color: rgb(231, 0, 0);
+  color: #ffffff;
+}
+.Small_gmail .Name {
+  flex-direction: column;
+  text-align: center;
+  padding-top: 30px;
+}
+.Small_gmail .Name .UserPhoto {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.Small_gmail .Name .UserPhoto h6 {
+  font-size: 2.2rem;
+  background-color: #000000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #ffffff;
+  width: 90px;
+  height: 90px;
+}
+.Small_gmail .Name h6 {
+  font-size: 0.8rem;
+}
+.Small_gmail .Name h4 {
+  font-size: 1.2rem;
+}
+.Small_gmail .Name .Avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.Small_gmail .Name button {
+  border: 2px rgba(4, 109, 56, 0.9294117647) solid;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-weight: 600;
+}
+.Small_gmail .Name button:hover {
+  background-color: #e0e0e0;
+}
+
+hr {
+  width: 90vw;
+  margin: auto !important;
+}
+
+.Timer {
+  display: flex;
+  margin-top: 100px;
+}
+.Timer h1 {
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  padding: 5px 5px;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  color: #ffbb00;
+}
+.Timer h2 {
+  font-size: 1.7rem;
+  padding: 0 70px;
+}
+
+@media screen and (max-width: 1200px) {
+  .search_box {
+    margin: auto;
+    margin-left: -20rem;
+    padding-left: 5px;
+    width: 22vw;
+  }
+  .title {
+    color: #000000;
+    font-size: 1.2rem;
+    padding-left: 0px;
+    font-weight: 600;
+  }
+  .Nav_icons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    top: 0%;
+  }
+  .Nav_icons span {
+    padding-left: 10px;
+  }
+  .Gmail {
+    padding-left: 15px;
+  }
+  .Gmail .Name {
+    flex-direction: column;
+    text-align: center;
+  }
+  .Gmail .Name h6 {
+    padding: 0 5px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .search_box {
+    padding-bottom: 100px;
+    margin-left: 0rem;
+    width: 320px;
+  }
+  .title {
+    color: #000000;
+    font-size: 1.2rem;
+    padding-left: 0px;
+    font-weight: 600;
+  }
+  .Nav_icons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 74%;
+  }
+  .Nav_icons span {
+    padding-left: 30px;
+  }
+  .Gmail {
+    padding-left: 25px;
+  }
+  .Gmail .Name {
+    flex-direction: column;
+    text-align: center;
+  }
+  .Gmail .Name h6 {
+    padding: 0 5px;
+  }
+  .Darkmode {
+    width: 50px;
+  }
+  .Darkmode span {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 578px) {
+  .Timer {
+    display: block;
+    justify-content: center;
+  }
+  .Timer h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .Timer h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .Nav_icons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+  }
+  .Nav_icons span {
+    padding-left: 15px;
+  }
+  .Gmail {
+    padding-left: 15px;
+  }
+  .Gmail .Name {
+    flex-direction: column;
+    text-align: center;
+  }
+  .Gmail .Name h6 {
+    padding: 0 5px;
+  }
+  .Small_gmail {
+    height: 50vh;
+    position: absolute;
+    top: 65px;
+    right: 2%;
+  }
+}/*# sourceMappingURL=Home.css.map */

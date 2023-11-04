@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+$primeColor:#046D38ED;
+$secondColor : #252525;
+$thirdColor :#000000 ;
+$fourthColor:#ffffff;
+$fifthColor:#ffbb00;
+
+
+
+$primeFont : 1.2rem;
+$secondFont : 2.8rem;
+$thirdFont : 1.7rem;
+
+.head-Log{
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 110px;
+    
+}
+.activeColor{
+    border: 2px solid $fifthColor;  
+    text-align: center;
+    cursor: pointer; 
+    font-size: $primeFont;
+    background:$primeColor;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 700;
+}
+.pointer{
+    border: 2px solid $primeColor;  
+    text-align: center;
+    cursor: pointer; 
+    font-size: $primeFont;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 700;
+}
+.title_log{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
+    padding-top: 120px;
+    h1{
+        font-size: $secondFont;
+        font-weight: 700;
+        font-family: 'Signika Negative', sans-serif;
+        border-bottom: 3px solid $primeColor;
+        border-radius: 2px;
+        color: $fifthColor;
+        text-shadow: #000000 1px 2px 3px ;
+    }
+}
+
+.Login{
+    padding: 50px;
+    width: 40%;
+    background-color:$primeColor;
+    position: relative;
+    top: 50px;
+    margin-bottom: 500px;
+    border-radius: 10px;
+    font-weight:700;
+    .Form_label{
+        font-size: $primeFont;
+        font-weight: 500;
+        color:$fifthColor ;
+        text-shadow: $thirdColor 1px 2px 3px;
+    }
+    .Valid_err{
+        color: rgb(173, 2, 2);
+        font-weight: 700;
+        text-shadow: $thirdColor 1px 2px 4px;
+        font-size: 1rem;
+    }
+    .Valid_err>label{
+        font-weight: 500;
+        color:$fifthColor ;
+        text-shadow: $thirdColor 1px 2px 3px;
+    }
+    .Valid_true{
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        text-shadow: white 1px 2px 4px;
+        font-size: 1rem;
+    }
+    .Btn_Submit{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 20%;
+        height: 50px;
+        color: $thirdColor;
+        background-color: $fifthColor;
+        margin-top: 30px;
+        font-size: $primeFont;
+        font-weight: 600;
+    }
+    .Btn_Submit:active{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 20%;
+        height: 50px;
+        color: $thirdColor;
+        background-color: rgb(255, 123, 0);
+        margin-top: 30px;
+        font-size: $primeFont;
+        font-weight: 600;
+    }
+    .show_hide{
+        border: none;
+        padding: 10px ;
+    }
+}
+.face{
+    margin-top: 200px;
+}
+.title_or{
+    color: #ffffff;
+    font-size: $primeFont;
+    padding-top: 30px;
+}
+.Login_with{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 20px;
+    img{
+        width: 50px;
+        height: auto;
+        margin: 10px;
+        cursor: pointer;
+    }
+}
+.Forget{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 220px;
+    padding-bottom: 400px;
+    h1{
+        font-size: $secondFont;
+        font-weight: 600;
+        font-family: 'Signika Negative', sans-serif;
+        border-bottom: 3px solid $primeColor;
+        border-radius: 2px;
+        color: $fifthColor;
+        text-shadow: #000000 1px 2px 3px ;
+    }
+    .Forget_btn{
+        padding-top: 40px ;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        input{
+            height: 50px;
+            border: none;
+            border-radius: 5px;
+            width: 90%;
+        }
+        button{
+        width: 50%;
+        height: 50px;
+        color: $thirdColor;
+        background-color: $fifthColor;
+        border: none;
+        border-radius: 5px;
+        margin-top: 30px;
+        font-size: $primeFont;
+        font-weight: 600;
+        }
+    }
+}
+.forgetpass{
+    cursor: pointer;
+}
+
+@media screen and (max-width:1108px) {
+    .Login{
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width:992px) {
+    .Login{
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .Login{
+        width: 80%;
+        padding: 35px;
+
+    }
+    
+}
+@media screen and (max-width:576px) {
+    .Login{
+        padding: 30px;
+        width: 95%;
+        .Btn_Submit{
+            width: 40%;
+            height: 50px;
+        }
+    }
+    
+}

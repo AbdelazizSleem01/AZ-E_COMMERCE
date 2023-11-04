@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&family=Signika+Negative:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.Cart-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+}
+.Cart-title h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  font-family: "Signika Negative", sans-serif;
+  border-bottom: 2px solid rgba(4, 109, 56, 0.9294117647);
+  color: #ffbb00;
+  text-shadow: #000000 1px 2px 3px;
+}
+
+.cart_img {
+  display: flex;
+  align-items: center;
+  width: 45%;
+}
+.cart_img p {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-left: 5px;
+}
+.cart_img .img {
+  height: 100px;
+  width: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cart_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 2px solid #ffbb00;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.cart_box img {
+  height: 70px;
+  width: 70px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cart_box div:nth-child(2) button {
+  padding: 5px 10px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.cart_box div:nth-child(3) button {
+  padding: 5px 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart_box div:nth-child(3) button:hover {
+  opacity: 0.9;
+}
+
+.cart_box div:nth-child(3) span {
+  background-color: #ffbb00;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total span:nth-child(1) {
+  font-size: 2rem;
+  color: rgba(4, 109, 56, 0.9294117647);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.total span:nth-child(2) {
+  font-size: 2rem;
+  color: rgba(4, 109, 56, 0.9294117647);
+  font-weight: bold;
+  text-shadow: 1px 1px;
+}
+
+.reducer button {
+  border: 2px solid rgba(4, 109, 56, 0.9294117647);
+  border-radius: 5px;
+}
+
+.clear_button {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  border: 3px dotted #ffbb00;
+  color: #ffffff;
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.Empty_cart {
+  display: block;
+  justify-content: center;
+  padding-top: 300px;
+  padding-bottom: 100px;
+}
+.Empty_cart h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-family: "Signika Negative", sans-serif;
+  background-color: rgba(4, 109, 56, 0.9294117647);
+  color: #ffbb00;
+  padding: 10px;
+  border-radius: 10px;
+  width: 35%;
+}
+.Empty_cart .HashLink {
+  text-decoration: none;
+}
+.Empty_cart .HashLink Button {
+  background-color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.Empty_cart .HashLink strong {
+  color: #000000;
+  font-family: "Signika Negative", sans-serif;
+  font-size: 1.8rem;
+}
+.Empty_cart .HashLink span {
+  text-align: center;
+  color: #000000;
+  font-size: 2rem;
+}
+
+.Hash {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  article {
+    padding-top: 120px;
+    width: 90%;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  .cart_box {
+    border-bottom: 2px solid #ffbb00;
+  }
+  .cart_box .cart_img {
+    padding-right: 90px;
+    width: 30%;
+  }
+  .cart_box .reducer {
+    margin-left: 170px;
+    padding-left: 170px;
+  }
+  .Empty_cart {
+    display: block;
+    justify-content: center;
+    padding-top: 300px;
+    padding-bottom: 100px;
+  }
+  .Empty_cart h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+    font-family: "Signika Negative", sans-serif;
+    background-color: rgba(4, 109, 56, 0.9294117647);
+    color: #ffbb00;
+    padding: 10px;
+    border-radius: 10px;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .clear_button {
+    width: 50%;
+  }
+  .Empty_cart {
+    display: block;
+    justify-content: center;
+    padding-top: 300px;
+    padding-bottom: 100px;
+  }
+  .Empty_cart h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: "Signika Negative", sans-serif;
+    background-color: rgba(4, 109, 56, 0.9294117647);
+    color: #ffbb00;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+  }
+  .cart_img {
+    padding-right: 90px;
+  }
+  .cart_img img {
+    height: 70px;
+    width: 70px;
+  }
+}/*# sourceMappingURL=cart.css.map */

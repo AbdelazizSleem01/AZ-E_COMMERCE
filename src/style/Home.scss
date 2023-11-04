@@ -1,0 +1,632 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+$primeColor:#046D38ED;
+$secondColor : #252525;
+$thirdColor :#000000 ;
+$fourthColor:#ffffff;
+$fifthColor:#ffbb00;
+
+
+
+$primeFont : 1.2rem;
+$secondFont : 2.8rem;
+$thirdFont : 1.7rem;
+
+/* .Navbar { */
+
+    .NAV{
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+.bg_nav{
+    background-color: $primeColor;
+    position: relative; 
+}
+.Logo{
+    font-weight: 700;
+    margin: 8px;
+    img{
+    margin: -8px;
+    }
+}
+.shop_cart{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;    
+    h4{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: 20px;
+        width: 20px;
+        background-color:$fifthColor ;
+        border-radius: 50%;
+        color: $thirdColor;
+        margin-left: -25px;
+        margin-top: 0px;
+        font-size: 15px;
+    }
+}
+.Pages_par{
+    .Pages{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        text-decoration: none;
+        color: $primeColor;
+        font-size: $primeFont;
+        font-weight: 800;
+        background-color:$fifthColor ;
+        padding: 5px 10px;
+        border-radius:15px;
+        text-shadow: $fourthColor 1px 2px 3px ;
+        &:active{
+            color: $fourthColor;
+            text-shadow: $thirdColor 1px 2px 3px ;
+        }
+    }
+}
+.TOTOP{
+    text-decoration: none;
+    &:hover{
+        opacity: .8;
+    }
+}
+.scroll-to-top{
+    position: fixed;
+    z-index: 2000;
+    left: 3%;
+    top:90%;
+    background-color:$fifthColor ;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+.scroll-to-top.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.title{
+    color: $thirdColor ;
+    font-size: $primeFont;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.title { display:inline-block; }
+.title:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px $fifthColor;  
+    -webkit-transform: scaleX(0);  
+        -ms-transform: scaleX(0);  
+            transform: scaleX(0);  
+    -webkit-transition: -webkit-transform 250ms ease-in-out;  
+    transition: -webkit-transform 250ms ease-in-out;  
+    -o-transition: transform 250ms ease-in-out;  
+    transition: transform 250ms ease-in-out;  
+    transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+    margin-top: 5px;
+}
+
+.title:after{ -webkit-transform-origin: 100% 50%; -ms-transform-origin: 100% 50%; transform-origin: 100% 50%; }
+
+.title:hover:after{ -webkit-transform: scaleX(1); -ms-transform: scaleX(1); transform: scaleX(1); -webkit-transform-origin:   0% 50%; -ms-transform-origin:   0% 50%; transform-origin:   0% 50%; }
+
+.search_box{
+    margin: auto;
+    margin-left: -20rem;
+    padding-left: 20px;
+    width: 32vw;
+}
+
+.search_box input[type="search"]:focus {
+    border-color: $fifthColor!important;
+    outline-color : none !important;
+
+}
+
+.search_button{
+    color: $thirdColor !important;
+    font-weight: 600 !important;
+    background-color: $fifthColor!important;
+    border-color: $fifthColor!important;
+}
+
+.search_button:hover{
+    opacity: .9;
+}
+
+// left_nav
+
+.Nav_icons{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex ;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    right:10px;
+    span{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        padding:10px;
+        font-size: 30px;
+        color: $thirdColor;
+        cursor: pointer;
+    }
+    span:hover {
+        color: #ffbb00;
+    }
+}
+.UserPhoto{
+    padding: 0 10px;
+    cursor: pointer;
+    h6{
+        background-color: $thirdColor;
+        border-radius: 50%;
+        text-align:center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: $fourthColor;
+        width: 35px;
+        height: 35px;
+        font-size: 13px;
+    }
+}
+
+.drop{
+    margin-left: 10px;
+    .menu{
+        .as{
+            text-decoration: none;
+            height: 40px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            text-align: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: $thirdColor;
+            span{
+                font-size: 1.5rem;
+            }
+            &:active{
+                background-color:none;
+            }
+            span:hover{
+                color: #000000;
+            }
+        }
+    }
+}
+.dark{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    .title-card{
+        color: #ffffff;
+    }
+    .top_card{
+        border: 1px solid $fourthColor;
+    }
+    .cards{
+        -webkit-box-shadow: 1px 1px 5px 3px $fourthColor;
+                box-shadow: 1px 1px 5px 3px $fourthColor;
+    }
+    .details{
+        margin-bottom: 30px;
+        li{
+            color:$fourthColor;
+        }
+    }
+    .top_title{
+        font-size: 1.5rem;
+        font-weight: 600;
+        background-color: #c5c5c5;
+        border-radius: 2px;
+        p{
+            padding: 15px;
+            color: #000;
+        }
+    }
+    .Name{
+        h6,h4{
+            color: $thirdColor;
+        }
+    }
+    .Close-btn{
+        color: $thirdColor;
+    }
+
+}
+.Darkmode{
+    background-color: $primeColor;
+    border: none;
+    border-radius: 50%;
+    width: 50px ;
+    span{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+}
+
+// Gmail
+
+.Gmail{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    .Avatar{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;  
+        margin: 15px;
+        cursor: pointer;
+    }
+
+}
+
+.Small_gmail{
+    margin: 0;
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 65px;
+    right: 35%;
+    background-color: #e1e1e1;
+    z-index: 1000;
+    overflow: auto;
+    scroll-behavior: smooth;
+    border-radius: 30px;
+    .Btn_Submit{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 20%;
+        height: 50px;
+        color: $thirdColor;
+        background-color: $fifthColor;
+        margin: 30px 0;
+        font-size: $primeFont;
+        font-weight: 600;
+        border-radius: 15px;
+    }
+    .Btn_Submit:active{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        width: 20%;
+        height: 50px;
+        color: $thirdColor;
+        background-color: rgb(255, 123, 0);
+        margin-top: 30px;
+        font-size: $primeFont;
+        font-weight: 600;
+    }
+    .Close-btn{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.4rem;
+        color: $thirdColor;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        padding-top: 3px;
+        &:hover{
+            background-color: #0000002c;
+            border-radius: 50%;
+            cursor: pointer;
+            text-align: center;
+        }
+        &:active{
+            background-color: rgb(231, 0, 0);
+            color: $fourthColor;
+        }
+    }
+    .Name{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+        padding-top: 30px;
+        .UserPhoto{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            cursor: pointer;
+            h6{
+                font-size: 2.2rem;
+                background-color: $thirdColor;
+                border-radius: 50%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                text-align:center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                color: $fourthColor;
+                width: 90px;
+                height: 90px;
+                
+            }
+        }
+        h6{
+            font-size:.8rem;
+        }
+        h4{
+            font-size:1.2rem;
+        }
+        .Avatar{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;  
+            margin-right: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        button{
+            border: 2px $primeColor solid;
+            margin-top: 20px;
+            border-radius: 20px;
+            padding:5px 12px;
+            font-weight: 600;
+            &:hover{
+                background-color: #e0e0e0;
+            }
+        }
+    }
+}
+hr{
+    width: 90vw; 
+    margin: auto !important;  
+}
+
+.Timer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 100px;
+    h1{
+        background-color: $primeColor;
+        padding: 5px 5px ;
+        border-radius: 5px;
+        font-size:$thirdFont ; 
+        color:  $fifthColor;
+    }
+    h2{
+        font-size:$thirdFont ; 
+        padding: 0 70px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .search_box{
+        margin: auto;
+        margin-left: -20rem;
+        padding-left: 5px;
+        width: 22vw;
+    }
+    .title{
+        color: $thirdColor ;
+        font-size: $primeFont;
+        padding-left: 0px;
+        font-weight: 600;
+    }
+    .Nav_icons{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex ;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        position: absolute;
+        right: 0px;
+        top: 0%;
+        span{
+            padding-left: 10px;
+        }
+    }
+    .Gmail{
+        padding-left: 15px;
+    .Name{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+        h6{
+            padding:0 5px;
+        }
+        }
+    }
+}
+@media screen and (max-width:992px) {
+    .search_box{
+        padding-bottom: 100px;
+        margin-left: 0rem;
+        width: 320px;
+    }
+    .title{
+        color: $thirdColor ;
+        font-size: $primeFont;
+        padding-left: 0px;
+        font-weight: 600;
+    }
+    .Nav_icons{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex ;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        position: absolute;
+        left:0;
+        top: 74%;
+        span{
+            padding-left: 30px;
+            
+        }
+    }
+    .Gmail{
+        padding-left: 25px;
+    .Name{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+        h6{
+            padding:0 5px;
+        }
+        }
+    }
+    .Darkmode{
+        width: 50px ;
+        span{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            padding: 10px;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:578px ) {
+    .Timer{
+        display: block;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;                
+        h1{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            margin-top: 10px;
+        }
+        h2{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            margin-bottom: 10px;
+        }
+    }
+    .Nav_icons{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex ;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        position: absolute;
+        span{
+            padding-left: 15px;
+        }
+    }
+    .Gmail{
+        padding-left: 15px;
+    .Name{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
+        h6{
+            padding:0 5px;
+        }
+        }
+    }
+    .Small_gmail{
+        height: 50vh;
+        position: absolute;
+        top: 65px;
+        right:2%;
+    }
+
+}

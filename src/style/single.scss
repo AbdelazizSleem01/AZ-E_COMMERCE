@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+$primeColor:#046D38ED;
+$secondColor : #252525;
+$thirdColor :#000000 ;
+$fourthColor:#ffffff;
+$fifthColor:#ffbb00;
+
+//Fonts
+
+
+$primeFont : 1.2rem;
+$secondFont : 2.8rem;
+$thirdFont : 1.7rem;
+.SingleCard{
+    width: 100%;
+}
+
+.lead{
+    .des_price{
+        color: #ff0000;
+        font-size: $thirdFont;
+        font-weight: 700;
+    }
+}
+.btn_cart{
+    background-color: $primeColor;
+    color: $fourthColor;
+    font-weight: 700;
+    padding: 9px;
+    border-radius: 5px;
+    border:none;
+}
+
+.btn_cart:hover{
+    background-color: $primeColor;
+    color: $thirdColor;
+}
+
+.btn_fav{
+    background-color: $fifthColor;
+    color: $thirdColor;
+    font-weight: 700;
+    padding: 9px;
+    border-radius: 5px;
+    border: none;
+}
+.btn_fav:hover{
+    background-color: $fifthColor;
+    color: $fourthColor;
+    font-weight: 700;
+}
+
+.details{
+    margin-bottom: 30px;
+    li{
+        color:rgb(58, 58, 58);
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
+
+.Des_title{
+    font-size: 1.3rem;
+    color: $fifthColor;
+    text-shadow: 1px 2px 2px $thirdColor;
+}
+
+
+.rating{
+    display: flex;
+    p{
+        font-size:1.7rem;
+        font-weight:600 ;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .stars{
+        font-size: 2.1rem;
+        padding-top: 3px;
+    }
+    margin-bottom: 10px;
+}
+
