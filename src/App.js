@@ -1,6 +1,9 @@
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
 import React , {useState,useEffect,} from 'react';
 import { HashLink } from 'react-router-hash-link';
+import PropagateLoader from "react-spinners/PropagateLoader";
+import Alogo from '../src/components/img/letter-a-load.png'
+import Zlogo from '../src/components/img/letter-z.png'
 import Home from './components/Home';
 import SingleCard1 from './components/SingleCard1';
 import SingleCard2 from './components/SingleCard2';
@@ -30,7 +33,7 @@ import CheckOut from './components/CheckOut';
 import Compare from './components/Compare';
 import Payment from './components/Payment';
 import  SmallPage from './components/SmallPage';
-import './App.css'
+import './App.scss'
 import 'animate.css';
 import './style/amazon.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -47,6 +50,18 @@ const App = () => {
 		const [warningcheck, setWarningcheck] = useState(false);
 		const [firstName, setFirstName] = useState('');
 		const [lastName, setLastName] = useState('');
+
+		// loading
+		const[loading , setloading] = useState(false);
+		useEffect(()=>{
+			setloading(true);
+
+			setTimeout(()=>{
+			setloading(false)
+			},4000)
+		},[])
+
+		// localstorage
 
 		useEffect(() => {
 			const savedFirstName = localStorage.getItem('firstName');
@@ -210,75 +225,89 @@ const handleRemove = (id) => {
             }
         }, []);
 
-		return (
-			<div className='animate__animated  animate__fadeIn animate__delay-1s'>
-			<BrowserRouter >
-				<Navbar size={cart.length} setShow={setShow}  favor={fav.length} Comp={check.length} firstName={firstName} lastName={lastName}/>
-					<Chatbot/>
-					<HashLink className='TOTOP' >
-						<button className={`scroll-to-top  ${visible ? 'visible' : ''}`}  onClick={() => scrollToTop()}><i class="fa-solid fa-angles-up"></i></button>
-					</HashLink>
-				<Routes>
-					<Route path='/' element = {<Home/>}/>
-					<Route path='/Contact' element = {<Contact/>}/>
-					<Route path='/Login' element = {<Login />}/>
-					<Route path='/SignIn' element = {<SignIn setFirstName={setFirstName} setLastName={setLastName}/>}/>
-					<Route path='/SmallPage' element = {<SmallPage firstName={firstName} lastName={lastName}/>}/>
-					<Route path='/reset' element = {<ForgetPass/>}/>
-					<Route path='/Checkout' element = {<CheckOut cart={cart} handleRemove={handleRemove}/>}/>
-					<Route path='/Compare' element = {<Compare/>}/>
-					<Route path='/Payment' element = {<Payment  cart={cart}/>}/>
-					<Route path='/SingleCard1' element = {<SingleCard1/>}/>
-					<Route path='/SingleCard2' element = {<SingleCard2/>}/>
-					<Route path='/SingleCard3' element = {<SingleCard3/>}/>
-					<Route path='/SingleCard4' element = {<SingleCard4/>}/>
-					<Route path='/SingleCard5' element = {<SingleCard5/>}/>
-					<Route path='/SingleCard6' element = {<SingleCard6/>}/>
-					<Route path='/SingleCard7' element = {<SingleCard7/>}/>
-					<Route path='/SingleCard8' element = {<SingleCard8/>}/>
-					<Route path='/SingleCard9' element = {<SingleCard9/>}/>
-					<Route path='/SingleCard10' element = {<SingleCard10/>}/>
-					<Route path='/SingleCard11' element = {<SingleCard11/>}/>
-					<Route path='/SingleCard12' element = {<SingleCard12/>}/>
-					<Route path='/SingleCard13' element = {<SingleCard13/>}/>
-				
-				</Routes>
-				{show ? (
-					<Amazon  handleClick={handleClick}  handleClickfav={handleClickfav}  handleCheck={handleCheck} />
-					) : (
-						<>
-							<div  id = 'Cart'>
-								<Cart cart={cart}  setCart={setCart}  handleChange={handleChange} handleRemove={handleRemove}/>
-							</div>
-							<div id = 'Favor'>
-								<Favor fav={fav} cart={cart} setFav={setFav} handleChangefav={handleChangefav} handleClick={handleClick} />
-							</div>
-							<div id = 'Check'>
-								<Compare check={check} cart={cart}  setCheck={setCheck} handleClick={handleClick} handleChangeCheck={handleChangeCheck}/>
-							</div>
-						</>
-						)}
-					{warning &&  <div className='Notification animate__animated  animate__backInRight '>
-									<h3> <span class="material-symbols-outlined">task_alt</span> Item is already added to cart</h3>
-								</div>   
-								}
-					{warningfav &&  <div className='Notification animate__animated  animate__backInRight '>
-									<h3> <span class="material-symbols-outlined">task_alt</span> Item is already added to Favourite</h3>
-								</div>   
-								}
-					{warningcheck &&  <div className='Notification animate__animated  animate__backInRight '>
-									<h3> <span class="material-symbols-outlined">task_alt</span> Item is already added to Compare</h3>
-								</div>   
-								}
-					
-					
-				<Routes>
-					<Route path='/' element={<AfterCards/>}/>
-					<Route path='/Footer' element={<Footer/>}/>
-				</Routes>
-				<Footer/>
-			</BrowserRouter>
-		</div>
+	return (
+		<>
+			{loading ?
+				<div className='Loader'>
+					<div className='Loader_Logo '>
+						<img src={Alogo} alt='A LOGO' /> <img src={Zlogo} alt='Z LOGO' />
+					</div>
+					<PropagateLoader
+					className='Prog'
+						color="#046D38ED"
+						cssOverride={{}}
+						loading
+						size={35}
+						speedMultiplier={1}
+						/>
+				</div>:
+				<div className='animate__animated  animate__fadeIn animate__delay-1s'>
+					<BrowserRouter >
+						<Navbar size={cart.length} setShow={setShow}  favor={fav.length} Comp={check.length} firstName={firstName} lastName={lastName}/>
+						<Chatbot/>
+						<HashLink className='TOTOP' >
+							<button className={`scroll-to-top  ${visible ? 'visible' : ''}`}  onClick={() => scrollToTop()}><i class="fa-solid fa-angles-up"></i></button>
+						</HashLink>
+						<Routes>
+							<Route path='/' element = {<Home/>}/>
+							<Route path='/Contact' element = {<Contact/>}/>
+							<Route path='/Login' element = {<Login />}/>
+							<Route path='/SignIn' element = {<SignIn setFirstName={setFirstName} setLastName={setLastName}/>}/>
+							<Route path='/SmallPage' element = {<SmallPage firstName={firstName} lastName={lastName}/>}/>
+							<Route path='/reset' element = {<ForgetPass/>}/>
+							<Route path='/Checkout' element = {<CheckOut cart={cart} handleRemove={handleRemove}/>}/>
+							<Route path='/Compare' element = {<Compare/>}/>
+							<Route path='/Payment' element = {<Payment  cart={cart}/>}/>
+							<Route path='/SingleCard1' element = {<SingleCard1/>}/>
+							<Route path='/SingleCard2' element = {<SingleCard2/>}/>
+							<Route path='/SingleCard3' element = {<SingleCard3/>}/>
+							<Route path='/SingleCard4' element = {<SingleCard4/>}/>
+							<Route path='/SingleCard5' element = {<SingleCard5/>}/>
+							<Route path='/SingleCard6' element = {<SingleCard6/>}/>
+							<Route path='/SingleCard7' element = {<SingleCard7/>}/>
+							<Route path='/SingleCard8' element = {<SingleCard8/>}/>
+							<Route path='/SingleCard9' element = {<SingleCard9/>}/>
+							<Route path='/SingleCard10' element = {<SingleCard10/>}/>
+							<Route path='/SingleCard11' element = {<SingleCard11/>}/>
+							<Route path='/SingleCard12' element = {<SingleCard12/>}/>
+							<Route path='/SingleCard13' element = {<SingleCard13/>}/>
+						</Routes>
+						{show ? (
+							<Amazon  handleClick={handleClick}  handleClickfav={handleClickfav}  handleCheck={handleCheck} />
+							) : (
+								<>
+									<div  id = 'Cart'>
+										<Cart cart={cart}  setCart={setCart}  handleChange={handleChange} handleRemove={handleRemove}/>
+									</div>
+									<div id = 'Favor'>
+										<Favor fav={fav} cart={cart} setFav={setFav} handleChangefav={handleChangefav} handleClick={handleClick} />
+									</div>
+									<div id = 'Check'>
+										<Compare check={check} cart={cart}  setCheck={setCheck} handleClick={handleClick} handleChangeCheck={handleChangeCheck}/>
+									</div>
+								</>
+								)}
+							{warning &&  <div className='Notification animate__animated  animate__backInRight '>
+											<h3> <span class="material-symbols-outlined">task_alt</span> Item is already added to cart</h3>
+										</div>   
+										}
+							{warningfav &&  <div className='Notification animate__animated  animate__backInRight '>
+											<h3> <span class="material-symbols-outlined">task_alt</span> Item is already added to Favourite</h3>
+										</div>   
+										}
+							{warningcheck &&  <div className='Notification animate__animated  animate__backInRight '>
+											<h3> <span class="material-symbols-outlined">task_alt</span> Item is already added to Compare</h3>
+										</div>   
+										}
+						<Routes>
+							<Route path='/' element={<AfterCards/>}/>
+							<Route path='/Footer' element={<Footer/>}/>
+						</Routes>
+						<Footer/>
+					</BrowserRouter>
+				</div>
+			}
+		</>
 	)
 }
 

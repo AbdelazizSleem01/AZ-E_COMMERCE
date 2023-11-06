@@ -1,11 +1,11 @@
 .dark {
   background-color: rgb(47, 47, 47);
   color: white;
-} 
-img {
+}/*# sourceMappingURL=App.css.map */
+
+img{
   border-radius: 10px;
 }
-
 .App {
   text-align: center;
   background-color: #282c34;
@@ -14,23 +14,22 @@ img {
   justify-content: center;
   align-items: center;
 }
-
-body {
+body{
   background-color: #000;
 }
-
-.Loader {
+.Loader{
+  .Prog{
+    margin-left: 30px;
+  }
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
 }
-.Loader .Prog {
-  margin-left: 30px;
+.Loader_Logo{
+  img{
+    margin-left: -50px;
+    object-fit: contain;
+    
+  }
 }
-
-.Loader_Logo img {
-  margin-left: -50px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}/*# sourceMappingURL=App.css.map */
