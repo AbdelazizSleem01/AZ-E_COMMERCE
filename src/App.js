@@ -29,7 +29,6 @@ import Login from './components/Login';
 import SignIn from './components/SignIn';
 import ForgetPass from './components/ForgetPass';
 import Chatbot from './components/Chatbot';
-import Chat from './components/Chat.jsx';
 import CheckOut from './components/CheckOut';
 import Compare from './components/Compare';
 import Payment from './components/Payment';
@@ -38,6 +37,7 @@ import './App.scss'
 import 'animate.css';
 import './style/amazon.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import GooglePay from './components/GooglePay.js';
 
 
 const App = () => {
@@ -62,8 +62,8 @@ const App = () => {
 		},[])
 
 		// localstorage
-
 		useEffect(() => {
+
 			const savedFirstName = localStorage.getItem('firstName');
 			const savedLastName = localStorage.getItem('lastName');
 		
@@ -143,8 +143,6 @@ const App = () => {
 			setFav([...fav, item]);
 			localStorage.setItem('fav', JSON.stringify(fav));
 		};
-
-//Change
 
 
 //handleChange
@@ -259,6 +257,7 @@ const handleRemove = (id) => {
 							<Route path='/Checkout' element = {<CheckOut cart={cart} handleRemove={handleRemove}/>}/>
 							<Route path='/Compare' element = {<Compare/>}/>
 							<Route path='/Payment' element = {<Payment  cart={cart}/>}/>
+							{/* <Route path='/GooglePay' element = {<GooglePay  cart={cart}/>}/> */}
 							<Route path='/SingleCard1' element = {<SingleCard1/>}/>
 							<Route path='/SingleCard2' element = {<SingleCard2/>}/>
 							<Route path='/SingleCard3' element = {<SingleCard3/>}/>

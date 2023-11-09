@@ -31,4 +31,12 @@
   color: #ffffff;
   border: 2px solid #ffbb00;
   width: auto;
+}
+
+.Google_pay {
+  display: flex;
+  justify-content: center;
+}
+.Google_pay .Google_btn {
+  height: 60px;
 }/*# sourceMappingURL=Payment.css.map */

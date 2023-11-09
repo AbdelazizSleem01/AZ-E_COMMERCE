@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import ReactDOM from "react-dom"
 import '../style/Payment.scss';
+
+import GooglePay from './GooglePay.js';
+
 const PayPalButton = window.paypal.Buttons.driver("react", { React, ReactDOM });
 
 const Payment = ({cart}) => {
@@ -28,6 +31,7 @@ const Payment = ({cart}) => {
     return (
         <div className="Payment mx-auto" id="Payment">
             <div className="wrapper">
+                <GooglePay cart={cart}/>
                 <PayPalButton
                     createOrder={(data, actions) => {
                         return actions.order.create({
