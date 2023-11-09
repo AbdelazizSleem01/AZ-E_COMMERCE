@@ -64,12 +64,12 @@ const CheckOut = ({ cart, handleRemove }) => {
             <Payment cart={cart}/>
             ) : (
             <div className="maincontainer pt-5" >
-                <div className="container-fluid">
+                <div className="container">
                     <div className="py-5 text-center">
                         <h2 className='title_Check ' id='Checkout'>Checkout form</h2>
                     </div>
                     <div className="row TOTAL">
-                        <div className="col-lg-4 col-md-6 order-md-2 mb-4 Check_Cart">
+                        <div className="col-lg-4 col-md-12 order-2  mb-4 Check_Cart">
                             <h4 className="d-flex justify-content-between align-items-center mb-3">
                                 <span className="">Your cart</span>
                                 <span className="badge badge-secondary badge-pill">Number of Items: {cart.length}</span>
@@ -107,7 +107,7 @@ const CheckOut = ({ cart, handleRemove }) => {
                                 </div>
                             </form>
                         </div>
-                        <div className="col-lg-8 col-md-6 order-md-1 w-50 mx-auto Form">
+                        <div className="col-lg-8 col-md-12 mx-auto Form">
                             <h4 className="mb-3">Billing address</h4>
                             <form className="needs-validation" ref={form} onSubmit={handleFormSubmit} noValidate>
                                 <div className="row">
@@ -210,8 +210,8 @@ const CheckOut = ({ cart, handleRemove }) => {
                                         Please provide a valid state.
                                         </div>
                                     </div>
-                                </div>
                                 <button className="Check-btn mx-auto" type="submit">Continue to checkout</button>
+                                </div>
                                 {validated &&
                                     <div className='Notification_remove animate__animated  animate__backInRight '>
                                         <h3> <span class='material-symbols-outlined'>error</span> Please fill in all the required fields.</h3>

@@ -76,8 +76,6 @@ $border:$fifthColor 1px solid;
                 margin: auto;
             }
             .Remove{
-                position: relative;
-                left: 400px;
                 padding: 5px 10px;
                 font-weight: bold;
                 letter-spacing: 2px;
@@ -88,7 +86,10 @@ $border:$fifthColor 1px solid;
                 border-radius: 5px;
                 cursor: pointer;
                 margin: 20px 0;
-                
+                &:hover{
+                    background-color: rgb(206, 1, 1);
+                    transition: all ease-in .1s;
+                }
             }
             .product-details{
                 padding: 10px;

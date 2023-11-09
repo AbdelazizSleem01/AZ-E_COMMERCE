@@ -44,14 +44,8 @@ $thirdFont : 1.7rem;
     display: -ms-flexbox;
     display: flex;    
     h4{
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
                 align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
                 justify-content: center;
         height: 20px;
         width: 20px;
@@ -65,12 +59,8 @@ $thirdFont : 1.7rem;
 }
 .Pages_par{
     .Pages{
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        justify-content: center;
         text-decoration: none;
         color: $primeColor;
         font-size: $primeFont;
@@ -100,18 +90,12 @@ $thirdFont : 1.7rem;
     padding: 10px;
     border: none;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     font-size: 1.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -178,17 +162,11 @@ $thirdFont : 1.7rem;
 // left_nav
 
 .Nav_icons{
-    display:-webkit-box;
-    display:-ms-flexbox;
     display:flex ;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     position: absolute;
     right:10px;
     span{
-        display:-webkit-box;
-        display:-ms-flexbox;
         display:flex;
         padding:10px;
         font-size: 30px;
@@ -206,12 +184,8 @@ $thirdFont : 1.7rem;
         background-color: $thirdColor;
         border-radius: 50%;
         text-align:center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        align-items: center;
+        justify-content: center;
         color: $fourthColor;
         width: 35px;
         height: 35px;
@@ -225,13 +199,9 @@ $thirdFont : 1.7rem;
         .as{
             text-decoration: none;
             height: 40px;
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
             text-align: center;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+            align-items: center;
             font-size: 1.1rem;
             font-weight: 500;
             color: $thirdColor;
@@ -292,24 +262,16 @@ $thirdFont : 1.7rem;
     border-radius: 50%;
     width: 50px ;
     span{
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        justify-content: center;
     }
 }
 
 // Gmail
 
 .Gmail{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     .Avatar{
         width: 30px;
         height: 30px;
@@ -333,15 +295,9 @@ $thirdFont : 1.7rem;
     scroll-behavior: smooth;
     border-radius: 30px;
     .Btn_Submit{
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        justify-content: center;
+        align-items: center;
         width: 20%;
         height: 50px;
         color: $thirdColor;
@@ -352,15 +308,9 @@ $thirdFont : 1.7rem;
         border-radius: 15px;
     }
     .Btn_Submit:active{
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        justify-content: center;
+        align-items: center;
         width: 20%;
         height: 50px;
         color: $thirdColor;
@@ -380,45 +330,31 @@ $thirdFont : 1.7rem;
         text-align: center;
         padding-top: 3px;
         &:hover{
-            background-color: #0000002c;
             border-radius: 50%;
             cursor: pointer;
             text-align: center;
-        }
-        &:active{
             background-color: rgb(231, 0, 0);
             color: $fourthColor;
         }
     }
     .Name{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        
+        flex-direction: column;
         text-align: center;
         padding-top: 30px;
         .UserPhoto{
-            display: -webkit-box;
-            display: -ms-flexbox;
+            
             display: flex;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+            justify-content: center;
             cursor: pointer;
             h6{
                 font-size: 2.2rem;
                 background-color: $thirdColor;
                 border-radius: 50%;
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
-                -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                        justify-content: center;
+                justify-content: center;
                 text-align:center;
-                -webkit-box-align: center;
-                    -ms-flex-align: center;
-                        align-items: center;
+                align-items: center;
                 color: $fourthColor;
                 width: 90px;
                 height: 90px;
@@ -458,8 +394,6 @@ hr{
 }
 
 .Timer{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 100px;
     h1{
@@ -489,12 +423,8 @@ hr{
         font-weight: 600;
     }
     .Nav_icons{
-        display:-webkit-box;
-        display:-ms-flexbox;
         display:flex ;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        align-items: center;
         position: absolute;
         right: 0px;
         top: 0%;
@@ -505,10 +435,6 @@ hr{
     .Gmail{
         padding-left: 15px;
     .Name{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
         text-align: center;
         h6{
             padding:0 5px;
@@ -532,8 +458,6 @@ hr{
         display:-webkit-box;
         display:-ms-flexbox;
         display:flex ;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
                 align-items: center;
         position: absolute;
         left:0;
@@ -546,9 +470,7 @@ hr{
     .Gmail{
         padding-left: 25px;
     .Name{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
+        
                 flex-direction: column;
         text-align: center;
         h6{
@@ -559,11 +481,8 @@ hr{
     .Darkmode{
         width: 50px ;
         span{
-            display: -webkit-box;
-            display: -ms-flexbox;
+            
             display: flex;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
                     justify-content: center;
             padding: 10px;
         }
@@ -575,25 +494,17 @@ hr{
 @media screen and (max-width:578px ) {
     .Timer{
         display: block;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;                
+        justify-content: center;                
         h1{
-            display: -webkit-box;
-            display: -ms-flexbox;
+            
             display: flex;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+            justify-content: center;
             margin-top: 10px;
         }
         h2{
-            display: -webkit-box;
-            display: -ms-flexbox;
+            
             display: flex;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+            justify-content: center;
             margin-bottom: 10px;
         }
     }
@@ -601,8 +512,6 @@ hr{
         display:-webkit-box;
         display:-ms-flexbox;
         display:flex ;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
                 align-items: center;
         position: absolute;
         span{
@@ -612,9 +521,7 @@ hr{
     .Gmail{
         padding-left: 15px;
     .Name{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
+        
                 flex-direction: column;
         text-align: center;
         h6{

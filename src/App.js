@@ -29,6 +29,7 @@ import Login from './components/Login';
 import SignIn from './components/SignIn';
 import ForgetPass from './components/ForgetPass';
 import Chatbot from './components/Chatbot';
+import Chat from './components/Chat.jsx';
 import CheckOut from './components/CheckOut';
 import Compare from './components/Compare';
 import Payment from './components/Payment';
@@ -53,12 +54,11 @@ const App = () => {
 
 		// loading
 		const[loading , setloading] = useState(false);
-		useEffect(()=>{
+			useEffect(()=>{
 			setloading(true);
-
 			setTimeout(()=>{
 			setloading(false)
-			},4000)
+			},0)
 		},[])
 
 		// localstorage
@@ -244,7 +244,8 @@ const handleRemove = (id) => {
 				<div className='animate__animated  animate__fadeIn animate__delay-1s'>
 					<BrowserRouter >
 						<Navbar size={cart.length} setShow={setShow}  favor={fav.length} Comp={check.length} firstName={firstName} lastName={lastName}/>
-						<Chatbot/>
+							{/* <Chat/> */}
+							<Chatbot/>
 						<HashLink className='TOTOP' >
 							<button className={`scroll-to-top  ${visible ? 'visible' : ''}`}  onClick={() => scrollToTop()}><i class="fa-solid fa-angles-up"></i></button>
 						</HashLink>

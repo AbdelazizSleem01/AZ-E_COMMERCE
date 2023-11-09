@@ -20,16 +20,20 @@
 }
 
 .Check_Cart {
+  position: relative;
+  left: 15px;
   background-color: rgba(4, 109, 56, 0.9294117647);
   padding: 15px;
   border-radius: 15px;
   width: 100%;
   height: 100%;
-  margin-right: 80px;
 }
 .Check_Cart .CART {
   width: 100%;
   height: auto;
+}
+.Check_Cart .Check_Product {
+  width: 100%;
 }
 .Check_Cart .Check_Product .NO_ITEM {
   display: flex;
@@ -96,10 +100,13 @@
 }
 
 .Form {
+  position: relative;
+  left: -15px;
+  width: 100%;
   border-radius: 10px;
   background-color: rgba(4, 109, 56, 0.9294117647);
-  height: 100vh;
   border: #ffbb00 2px solid;
+  margin-bottom: 50px;
 }
 .Form h4 {
   font-size: 1.9rem;
@@ -108,6 +115,7 @@
   letter-spacing: 3px;
 }
 .Form form {
+  width: 100%;
   padding: 10px 30px 0px 30px;
 }
 .Form form .border_Check {
@@ -126,14 +134,29 @@
   text-decoration: none;
   background-color: #ffbb00;
   padding: 10px;
-  margin-top: 20px;
   border: none;
-  width: 35%;
+  width: 45%;
   font-weight: 700;
+  margin: 20px 0;
   border-radius: 10px;
-  margin-bottom: 50px;
 }
 .Form form .Check-btn:hover {
   color: rgba(4, 109, 56, 0.9294117647);
   text-shadow: 1px 2px 1px #000000;
+}
+
+@media (max-width: 992px) and (min-width: 0) {
+  .Form {
+    position: relative;
+    left: 0;
+  }
+  .Check_Cart {
+    position: relative;
+    left: 0;
+  }
+}
+@media (max-width: 678px) {
+  .Check-btn {
+    width: 70%;
+  }
 }/*# sourceMappingURL=Checkout.css.map */

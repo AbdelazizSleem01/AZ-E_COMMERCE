@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&family=Signika+Negative:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.chat {
+  margin: 0;
+  position: absolute;
+  z-index: 1000;
+  overflow: auto;
+  scroll-behavior: smooth;
+  border-radius: 30px;
+  padding-top: 180px;
+  margin-bottom: 500px;
+}
+.chat .button_chat {
+  position: fixed;
+  z-index: 2000;
+  right: 2.5%;
+  top: 77%;
+  background-color: #046d38;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  font-size: 1.5rem;
+  border: none;
+  color: #ffffff;
+  padding-bottom: 0;
+}
+.chat .conver {
+  position: fixed;
+  top: 15%;
+  left: 60%;
+  z-index: 10000;
+  width: 400px;
+  height: 70vh;
+}
+.chat .conver .ChatContainer {
+  border-radius: 0px 0px 10px 10px;
+  display: block;
+  box-shadow: #4e4e4e 3px 3px 10px;
+}
+.chat .conver .ChatContainer .header {
+  position: fixed;
+  top: 5%;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 70px;
+  background-color: #046d38;
+  border-radius: 10px 10px 0px 0;
+  padding: 0 10px;
+  margin-left: -24px;
+}
+.chat .conver .ChatContainer .header img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 45px;
+  height: 45px;
+}
+.chat .conver .ChatContainer .header p {
+  margin: 10px 5px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+}
+.chat .conver .ChatContainer .MessageList {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.0588235294);
+}
+.chat .conver .ChatContainer .MessageList .Message {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@media screen and (max-width: 1107px) {
+  .chat .conver {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+  }
+  .chat .conver .ChatContainer .header {
+    height: 70px;
+    position: fixed;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .chat .conver {
+    position: fixed;
+    top: 20%;
+    left: 44%;
+  }
+  .chat .conver .ChatContainer .header {
+    height: 70px;
+    position: fixed;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 786px) {
+  .chat .conver {
+    position: fixed;
+    top: 20%;
+    left: 30%;
+  }
+  .chat .conver .ChatContainer .header {
+    height: 70px;
+    position: fixed;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .chat .conver {
+    position: fixed;
+    top: 20%;
+    left: 24%;
+  }
+  .chat .conver .ChatContainer .header {
+    height: 70px;
+    position: fixed;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .chat .conver {
+    position: fixed;
+    top: 20%;
+    left: 14%;
+  }
+  .chat .conver .ChatContainer .header {
+    height: 70px;
+    position: fixed;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .chat .conver {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 90%;
+  }
+  .chat .conver .ChatContainer .header {
+    margin-top: 0;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0%;
+  }
+}/*# sourceMappingURL=Chatbot.css.map */

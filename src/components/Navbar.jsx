@@ -112,17 +112,17 @@ const Navbarnav = ({size,favor,Comp, setShow}) => {
                         </NavDropdown>
 
                         <NavDropdown className="Pages_par" title={<span className='title'> Shop</span> } id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#action4">
+                            <NavDropdown.Item href="#">
                                 <HashLink smooth className="Pages">
                                     Home Organic
                                 </HashLink>
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action4">
+                            <NavDropdown.Item href="#">
                                 <HashLink smooth className="Pages">
                                     Home Electronic
                                 </HashLink>
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="#action4">
+                            <NavDropdown.Item href="#">
                                 <HashLink smooth className="Pages">
                                     Home Furniture
                                 </HashLink>
@@ -159,17 +159,17 @@ const Navbarnav = ({size,favor,Comp, setShow}) => {
 
                         <NavDropdown  className="Pages_par" title={<span className='title'> Blogs</span> } id="navbarScrollingDropdown">
                             <NavDropdown.Item href="#action4">
-                                <HashLink smooth className="Pages" to="/Contact">
+                                <HashLink smooth className="Pages" to="/">
                                     Home Organic
                                 </HashLink>
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action4">
-                                <HashLink smooth className="Pages" to="/Contact">
+                                <HashLink smooth className="Pages" to="/">
                                     Home Electronic
                                 </HashLink>
                             </NavDropdown.Item>
                             <NavDropdown.Item href="#action4">
-                                <HashLink smooth className="Pages" to="/Contact">
+                                <HashLink smooth className="Pages" to="/">
                                     Home Furniture
                                 </HashLink>
                             </NavDropdown.Item>

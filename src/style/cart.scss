@@ -85,6 +85,10 @@ article{
     background-color: $primeColor;
     border-radius: 5px;
     cursor: pointer;
+    &:hover{
+        background-color: rgb(206, 1, 1);
+        transition: all ease-in .1s;
+    }
 }
 .cart_box div:nth-child(3) button:hover{
     opacity: .9;
@@ -104,12 +108,14 @@ article{
     color: $primeColor;
     font-weight: bold;
     letter-spacing: 2px;
+    
 }
 .total span:nth-child(2){
     font-size: 2rem;
     color:$primeColor;
     font-weight: bold;
     text-shadow:  1px 1px;
+    
 }
 
 .reducer{

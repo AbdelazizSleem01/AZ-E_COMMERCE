@@ -1,7 +1,8 @@
 .dark {
   background-color: rgb(47, 47, 47);
   color: white;
-} 
+}
+
 img {
   border-radius: 10px;
 }
@@ -13,10 +14,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-body {
-  background-color: #000;
 }
 
 .Loader {

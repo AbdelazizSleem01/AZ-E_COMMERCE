@@ -36,17 +36,21 @@ $thirdFont : 1.7rem;
 // Cart
 
 .Check_Cart{
+    position: relative;
+    left: 15px;
     background-color: $primeColor;
     padding: 15px;
     border-radius: 15px;
     width: 100%;
     height: 100%;
-    margin-right:80px;
+
     .CART{
         width: 100%;
         height: auto;
     }
     .Check_Product{
+        
+        width: 100%;
         .NO_ITEM{
             display: flex;
             justify-content: center;
@@ -113,10 +117,13 @@ $thirdFont : 1.7rem;
     }
 }
 .Form{
+    position: relative;
+    left: -15px;
+    width: 100%;
     border-radius: 10px;
     background-color: $primeColor;
-    height:100vh;
     border: #ffbb00 2px solid;
+    margin-bottom: 50px;
     h4{
         font-size: 1.9rem;
         padding: 30px 0px  10px 30px;
@@ -124,6 +131,7 @@ $thirdFont : 1.7rem;
         letter-spacing: 3px;
     }
     form{
+        width: 100%;
         padding: 10px 30px  0px 30px;
         .border_Check{
             border: 2px solid $thirdColor;
@@ -141,19 +149,33 @@ $thirdFont : 1.7rem;
         text-decoration: none;
         background-color: $fifthColor;
         padding: 10px;
-        margin-top: 20px;
         border: none;
-        width: 35%;
+        width: 45%;
         font-weight: 700;
+        margin: 20px 0;
         border-radius: 10px;
-        margin-bottom: 50px;
         &:hover{
             color:$primeColor;
             text-shadow: 1px 2px 1px $thirdColor;
+            }
         }
     }
 }
+
+@media  (max-width: 992px) and (min-width:0) {
+    .Form{
+        position: relative;
+        left: 0;
+    }
+    .Check_Cart{
+        position: relative;
+        left: 0;
+    }
 }
-.error-message{
-    
+
+@media  (max-width: 678px) {
+    .Check-btn{
+        width: 70%;
+    }
+
 }

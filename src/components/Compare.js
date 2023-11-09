@@ -82,7 +82,7 @@ const Compare = ({check, setCheck, handleClick}) => {
                     <tr >
                         <td className='pro_title'><h5 className='text-center'>Product</h5></td>
                         {check.map((item) => (
-                        <td key={item.id} className='Items'>
+                            <td key={item.id} className='Items'>
                             <button className='Remove' onClick={() => handleRemoveBoth(item.id)}>Remove</button>
                             <div className="product-details">
                                 <img src={item.img} alt={item.title} className="product-image mx-auto" />
