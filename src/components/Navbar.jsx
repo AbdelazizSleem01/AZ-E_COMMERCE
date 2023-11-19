@@ -95,7 +95,7 @@ const Navbarnav = ({size,favor,Comp, setShow}) => {
                                 </HashLink>
                             </NavDropdown.Item>
                             <NavDropdown.Item >
-                                <HashLink smooth className="Pages" to={`/${productIDs}#bottom`}>
+                                <HashLink smooth className="Pages" to={`/smartpro`}>
                                     Smart Product
                                 </HashLink>
                             </NavDropdown.Item>

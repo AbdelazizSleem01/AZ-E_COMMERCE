@@ -14,7 +14,6 @@ const Amazon = ({ handleClick, handleClickfav,handleCheck}) => {
                 ))}
             </section>
             
-
         </>
     );
 };

@@ -33,11 +33,13 @@ import CheckOut from './components/CheckOut';
 import Compare from './components/Compare';
 import Payment from './components/Payment';
 import  SmallPage from './components/SmallPage';
+import  SmartPro from './components/SmartPro.jsx';
 import './App.scss'
 import 'animate.css';
 import './style/amazon.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import GooglePay from './components/GooglePay.js';
+import list2 from './data2.js';
 
 
 const App = () => {
@@ -271,6 +273,7 @@ const handleRemove = (id) => {
 							<Route path='/SingleCard11' element = {<SingleCard11/>}/>
 							<Route path='/SingleCard12' element = {<SingleCard12/>}/>
 							<Route path='/SingleCard13' element = {<SingleCard13/>}/>
+							<Route path='/SmartPro' element = {<SmartPro item={list2} cart={cart} setCart={setCart} fav={fav} check={check}   handleClick={handleClick}  handleClickfav={handleClickfav}  handleCheck={handleCheck} />}/>
 						</Routes>
 						{show ? (
 							<Amazon  handleClick={handleClick}  handleClickfav={handleClickfav}  handleCheck={handleCheck} />
